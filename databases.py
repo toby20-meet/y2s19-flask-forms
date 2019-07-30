@@ -8,7 +8,7 @@ Base.metadata.create_all(engine)
 DBSession = sessionmaker(bind=engine)
 session = DBSession()
 
-def add_student(name, year, finished_lab=True):
+def add_student(name, year, finished_lab=False):
 	"""
 	Add a student to the database, given
 	their name, year, and whether they have
